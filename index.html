@@ -1,32 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.svg"
+      type="image/x-icon"
+    />
     <title>Dree.uz</title>
-</head>
-<body class="overflow-hidden">
-    <section class="hero__section h-screen bg-center w-full">
-        <header class="header">
-            <div class="container">
-                <div class="bars flex">
-                    <div class="logo__dree">DREE</div>
-                    <div class="bar">
-                        <nav class="bar__body">
-                            <ul class="bar__list flex">
-                                <li>Asosiy</li>
-                                <li>Daraxt ekish</li>
-                                <li>Loyiha haqida</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+  </head>
+  <body class="overflow-x-hidden">
+    <section
+      class="hero__section relative min-h-screen !bg-center !bg-cover !bg-no-repeat w-full"
+    >
+      <header class="header">
+        <div class="container">
+          <div class="justify-between flex py-6">
+            <div class="bars flex items-center">
+              <div
+                class="logo__dree text-[40px] font-extrabold leading-[51px] text-white mr-[37px] font-['medium']"
+              >
+                <a href="#" target="_parent">DREE</a>
+              </div>
+              <div class="bar">
+                <nav class="bar__body">
+                  <ul
+                    class="bar__list flex gap-5 text-base text-white font-['medium'] pointer"
+                  >
+                    <li>Asosiy</li>
+                    <li>Daraxt ekish</li>
+                    <li>Loyiha haqida</li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-        </header>
+            <div class="flex items-center gap-[26px]">
+              <div
+                class="header__lang flex items-center font-['medium'] gap-1 text-base font-medium text-white"
+              >
+                <img src="./assets/images/header/header-flag.svg" alt="flag" />
+                O'zbekcha
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 9.5L12 14.5L7 9.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="header__search w-8 h-8 rounded-lg bg-white/10 items-center flex justify-center"
+              >
+                <img src="./assets/images/header/header_search.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="w-full hr" />
+      </header>
+      <main class="container">
+        <div class="absolute top-1/2 -translate-y-1/2">
+          <div>
+            <div class="title max-w-[586px]">
+              Kelajak uchun daraxtlar ekilishiga o‘z hissangizni qo‘shing!
+            </div>
+            <div class="mainhero_title text-2xl font-normal text-white">
+              1ta daraxt 10 000 so‘mdan
+            </div>
+          </div>
+          <div>
+            <a href="Daraht.html#">
+              <button
+                class="mainhero__button hover:opacity-90 duration-300 cursor-pointer text-[#031410] bg-whites py-3 pl-[46px] pr-[46px] font-['medium'] bg-white rounded-lg mt-[18px]"
+              >
+                Daraxt ekish
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
     </section>
-   
-</body>
+
+    <section class="loyiha__haqida bg-[#031410] pt-[96px] pb-[39px]">
+      <div class="container">
+        <div class="loyiha__text">
+          <div class="loyiha__title title font-['medium']">Loyiha haqida</div>
+          <div
+            class="loyiha__subtitle max-w-[688px] text-[#C0C4C3] font-['medium'] pt-4"
+          >
+            Ushbu loyiha O‘zbekistonning barcha hududlarida daraxt ekish uchun
+            mablag‘ to‘plash va ekish uchun yaratilgan. Loyiha orqali siz
+            chet-davlatdan turib ham O‘zbekistonning hohlagan hududi uchun
+            daraxtlar ekishingiz mumkin bo‘ladi. Bu orqali siz kelajak uchun
+            toza havoni ta’minlashga o‘z hissangizni qo‘shasiz!
+          </div>
+          <div>
+            <button
+              class="loyiha__button py-3 px-8 flex items-center font-bold text-base text-white bg-white/10 mt-[17px] rounded-lg gap-2  hover:opacity-80 duration-300"
+            >
+              Batafsil
+              <i
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.91073 15.5892C7.23617 15.9147 7.76381 15.9147 8.08925 15.5892L13.0892 10.5892C13.4147 10.2638 13.4147 9.73616 13.0892 9.41072L8.08925 4.41072C7.76381 4.08529 7.23617 4.08529 6.91073 4.41072C6.5853 4.73616 6.5853 5.2638 6.91073 5.58923L11.3215 9.99998L6.91073 14.4107C6.5853 14.7362 6.5853 15.2638 6.91073 15.5892Z"
+                    fill="white"
+                  />
+                </svg>
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="xarita bg-[#46271A]">
+        <div class="container">
+
+        </div>
+    </section>
+    <!-- <section class="bg-dark h-screen">
+      <div class="container"></div>
+    </section> -->
+  </body>
 </html>
