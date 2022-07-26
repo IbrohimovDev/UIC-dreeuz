@@ -2,3 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'black';
+    src: url('./assets/font/cera-pro-sv/Cera\ Pro\ Black.otf');
+}
+@font-face {
+    font-family: 'blackItalic';
+    src: url('./assets/font/cera-pro-sv/Cera\ Pro\ Black\ Italic.otf.otf');
+}
+@font-face {
+    font-family: 'bold';
+    src: url('./assets/font/cera-pro-sv/Cera Pro Bold.otf');
+}
+@font-face {
+    font-family: 'medium';
+    src: url('./assets/font/cera-pro-sv/Cera Pro Medium.otf');
+}
+@font-face {
+    font-family: 'regularItalic';
+    src: url('./assets/font/cera-pro-sv/Cera Pro Regular Italic.otf');
+}
+@font-face {
+    font-family: 'light';
+    src: url('./assets/font/cera-pro-sv/Cera Pro Light.otf.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cera\ Pro\ Medium.otf';
+}
+
+.container {
+    width: 90%;
+    max-width: 1192px;
+    margin: 0 auto;
+}
+
