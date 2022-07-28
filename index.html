@@ -11,8 +11,8 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <section class="hero__section relative min-h-screen !bg-center !bg-cover !bg-no-repeat w-full">
-        <header class="header">
+    <section class="hero__section relative min-h-screen !bg-center !bg-cover !bg-no-repeat w-full z-10">
+        <header class="border-b border-solid border-white/20">
             <div class="container">
                 <div class="justify-between flex py-6">
                     <div class="bars flex items-center">
@@ -23,9 +23,12 @@
                         <div class="bar">
                             <nav class="bar__body">
                                 <ul class="bar__list flex gap-5 text-base text-white font-['medium'] pointer">
-                                    <li>Asosiy</li>
-                                    <li>Daraxt ekish</li>
-                                    <li>Loyiha haqida</li>
+                                    <li class="active border-b border-solid border-[transparent] hover:border-[#00AC68]">Asosiy
+                                    </li>
+                                    <li class="border-b border-solid border-[transparent] hover:border-[#00AC68]">Daraxt
+                                        ekish</li>
+                                    <li class="border-b border-solid border-[transparent] hover:border-[#00AC68]">Loyiha
+                                        haqida</li>
                                 </ul>
                             </nav>
                         </div>
@@ -49,63 +52,84 @@
                     </div>
                 </div>
             </div>
-            <hr class="w-full hr" />
         </header>
-        <main class="container">
+        <main class="container relative min-h-screen">
+            <div class="bg-dark-footer absolute bottom-0 left-0 w-full h-[3vw] z-20"></div>
             <div class="absolute top-1/2 -translate-y-1/2">
-                <div>
-                    <div class="title max-w-[586px]">
-                        Kelajak uchun daraxtlar ekilishiga o‘z hissangizni qo‘shing!
-                    </div>
-                    <div class="mainhero_title text-2xl font-normal text-white">
-                        1ta daraxt 10 000 so‘mdan
-                    </div>
-                </div>
-                <div>
-                    <a href="Daraht.html#">
-                        <button
-                            class="mainhero__button hover:opacity-90 duration-300 cursor-pointer text-[#031410] bg-whites py-3 pl-[46px] pr-[46px] font-['medium'] bg-white rounded-lg mt-[18px]">
-                            Daraxt ekish
-                        </button>
-                    </a>
-                </div>
+                <h1 class="title max-w-[586px] mb-[6px]">
+                    Kelajak uchun daraxtlar ekilishiga o‘z hissangizni qo‘shing!
+                </h1>
+                <p class="text-2xl text-white mb-[18px] font-sans font-normal">
+                    1ta daraxt 10 000 so‘mdan
+                </p>
+                <button
+                    class="py-3 px-[46px] rounded-lg bg-white hover:bg-[#0E4D34] hover:text-white hover:outline-1 hover:outline hover:outline-[#3E715D] text-base text-[#031410] font-['bold'] duration-300 cursor-pointer">
+                    Daraxt ekish
+                </button>
             </div>
         </main>
     </section>
 
-    <section class="loyiha__haqida bg-[#031410] pt-[96px] pb-[39px]">
-        <div class="container">
-            <div class="loyiha__text">
-                <div class="loyiha__title title font-['medium']">Loyiha haqida</div>
-                <div class="loyiha__subtitle max-w-[688px] text-[#C0C4C3] font-['medium'] pt-4">
+    <section class="bg-[#031410]">
+        <div class="container relative">
+            <div class="relative max-w-[788px] w-9/12 pt-24 pb-[39px] z-20">
+                <p class="title mb-4">Loyiha haqida</p>
+                <p class="text-white lg:text-[#C0C4C3] text-2xl font-sans font-normal mb-[17px]">
                     Ushbu loyiha O‘zbekistonning barcha hududlarida daraxt ekish uchun
                     mablag‘ to‘plash va ekish uchun yaratilgan. Loyiha orqali siz
                     chet-davlatdan turib ham O‘zbekistonning hohlagan hududi uchun
                     daraxtlar ekishingiz mumkin bo‘ladi. Bu orqali siz kelajak uchun
                     toza havoni ta’minlashga o‘z hissangizni qo‘shasiz!
-                </div>
+                </p>
                 <div>
                     <button
-                        class="loyiha__button py-3 px-8 flex items-center font-bold text-base text-white bg-white/10 mt-[17px] rounded-lg gap-2  hover:opacity-80 duration-300">
-                        Batafsil
-                        <i><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.91073 15.5892C7.23617 15.9147 7.76381 15.9147 8.08925 15.5892L13.0892 10.5892C13.4147 10.2638 13.4147 9.73616 13.0892 9.41072L8.08925 4.41072C7.76381 4.08529 7.23617 4.08529 6.91073 4.41072C6.5853 4.73616 6.5853 5.2638 6.91073 5.58923L11.3215 9.99998L6.91073 14.4107C6.5853 14.7362 6.5853 15.2638 6.91073 15.5892Z"
-                                    fill="white" />
-                            </svg>
-                        </i>
+                        class="py-3 px-8 flex items-center font-['bold'] text-base leading-5 text-white bg-white/10 hover:bg-white/20 rounded-lg gap-2 hover:outline hover:outline-1 hover:border-white/75 duration-300">
+                        Batafsil <img src="./assets/images/chevron-right.svg" alt="chevron right">
                     </button>
+                </div>
+            </div>
+            <div
+                class="absolute bottom-0 translate-x-[50%] lg:translate-x-0 right-1/2 lg:right-0 z-10 opacity-60 lg:opacity-100\">
+                <img src="./assets/images/Loyiha/nihol.png" alt="nihol">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[#46271A] pt-[46px] pb-[29px]">
+        <div class="container flex items-center">
+            <div class="w-full md:w-1/2">
+                <p class="title w-[426px]">O'z hududingizga daraxt ekmoqchimisiz?</p>
+                <div>
+                    <img src="./assets/images/map.png" alt="xarita">
+                </div>
+            </div>
+            <div class="w-1/2">
+                <p class="text-2xl text-white font-['bold'] mb-[18px]">Qaysi hududga daraxt ekmoqchisiz?</p>
+                <div class="flex justify-between">
+                    <div>
+                        <div>
+                            <p class="text-base text-white/75 font-normal font-sans mb-[6px]">Viloyat</p>
+                            <div class="relative text-white font-sans font-normal border border-solid border-white/10 rounded-lg  select cursor-pointer select-none z-20"
+                                style="width:239px;">
+                                <p class="py-3 px-4 font-sans font-normal leading-[125%] select-title">Viloyatingizni tanlang</p>
+                                <ul class="absolute top-[107%] max-h-[180px] overflow-y-scroll overflow-x-hidden p-3 bg-[#1C2B27] border border-solid border-[#5B6663] rounded-lg z-[99] cursor-pointer select-menu">
+                                    <li class="select-menu-items">Toshkent Viloyati</li>
+                                    <li class="select-menu-items">Namangan Viloyati</li>
+                                    <li class="select-menu-items">Andijon Viloyati</li>
+                                    <li class="select-menu-items">Farg'ona Viloyati</li>
+                                    <li class="select-menu-items">Qoraqalpog'iston Respublikasi</li>
+                                </ul>
+                                <img class="absolute right-3 top-1/2 -translate-y-1/2 rotate-90 duration-300 z-10 selectChevron"
+                                    src="./assets/images/chevron-right.svg" alt="chevron-right">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="xarita bg-[#46271A]">
-        <div class="container">
-
-        </div>
-    </section>
     <section class="bg-dark h-screen">
         <div class="container">
             <p class="title mb-6">Eng ko'p daraxt ekkanlar</p>
@@ -120,10 +144,10 @@
                     </div>
                     <div class="flex gap-2">
                         <div>
-                            <img src="./assets/images/chevron-left.svg" alt="chevron left">
+                            <img src="./assets/images/chevron-rounded-left.svg" alt="chevron left">
                         </div>
                         <div>
-                            <img src="./assets/images/chevron-right.svg" alt="chevron right">
+                            <img src="./assets/images/chevron-rounded-right.svg" alt="chevron right">
                         </div>
                     </div>
                 </div>
@@ -148,6 +172,9 @@
             </div>
         </div>
     </section>
+
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
