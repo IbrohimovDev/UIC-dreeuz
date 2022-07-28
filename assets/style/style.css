@@ -3,112 +3,200 @@
 @tailwind utilities;
 
 :root {
-    --dark: #020b09;
+  --dark: #020b09;
 }
 
 @font-face {
-    font-family: "black";
-    src: url("../font/cera-pro-sv/Cera\ Pro\ Black.otf");
+  font-family: "black";
+  src: url("../font/cera-pro-sv/Cera\ Pro\ Black.otf");
 }
 
 @font-face {
-    font-family: "blackItalic";
-    src: url("../font/cera-pro-sv/Cera\ Pro\ Black\ Italic.otf.otf");
+  font-family: "blackItalic";
+  src: url("../font/cera-pro-sv/Cera\ Pro\ Black\ Italic.otf.otf");
 }
 
 @font-face {
-    font-family: "bold";
-    src: url("../font/cera-pro-sv/Cera Pro Bold.otf");
+  font-family: "bold";
+  src: url("../font/cera-pro-sv/Cera Pro Bold.otf");
 }
 
 @font-face {
-    font-family: "medium";
-    src: url("../font/cera-pro-sv/Cera Pro Medium.otf");
+  font-family: "medium";
+  src: url("../font/cera-pro-sv/Cera Pro Medium.otf");
 }
 
 @font-face {
-    font-family: "regularItalic";
-    src: url("../font/cera-pro-sv/Cera Pro Regular Italic.otf");
+  font-family: "regularItalic";
+  src: url("../font/cera-pro-sv/Cera Pro Regular Italic.otf");
 }
 
 @font-face {
-    font-family: "light";
-    src: url("../font/cera-pro-sv/Cera Pro Light.otf.otf");
+  font-family: "light";
+  src: url("../font/cera-pro-sv/Cera Pro Light.otf.otf");
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Cera\ Pro\ Medium.otf";
+  font-family: "Cera\ Pro\ Medium.otf";
 }
 
 .container {
-    width: 90%;
-    max-width: 1192px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1192px;
+  margin: 0 auto;
 }
 
 .text-dark {
-    color: var(--dark);
+  color: var(--dark);
 }
 
 .bg-dark {
-    background-color: var(--dark);
+  background-color: var(--dark);
 }
 
 .title {
-    font-family: "bold";
-    font-size: 36px;
-    line-height: 45px;
-    color: #fff;
+  font-family: "bold";
+  font-size: 36px;
+  line-height: 45px;
+  color: #fff;
 }
 
 .hero__section {
-    background: url(../images/hero-header/bg..png);
+  background: url(../images/hero-header/bg..png);
 }
 
 .hr {
-    height: 1px;
-    opacity: 0.2;
+  height: 1px;
+  opacity: 0.2;
 }
 
 .bar__body ul li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+/* swiper pagination start */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* navbar lighter */
-._active {
-    width: 50px;
-    height: 27px;
-    background: linear-gradient(180deg,
-            rgba(59, 206, 83, 0) 0%,
-            rgba(21, 190, 109, 0) 0.01%,
-            #15be6d 100%);
-    opacity: 0.2;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.active {
-    width: 50px;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  display: none;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-prev {
+  display: none;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  
+}
+
+/* swiiper pagination  ends  */
+
+
+
+
+/* slider :start  */
+
+.slide-track {
+  -webkit-animation: slider 5s linear infinite;
+  animation: slider 5s linear infinite;
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  animation-direction: reverse;
+  animation-play-state: running;
+  display: flex;
+  width: calc(100px * 14);
+}
+
+@-webkit-keyframes slider {
+  0% {
+    transform: translateX(0px);
+  }
+  70% {
+    transform: translateX(calc(-50px * 1));
+  }
+}
+
+.slide img {
+  width: 100px;
+  height: 100px;
+}
+/* slider ends  */
+
+.d__ekish {
+  background: url(../images/darahtekish/bg.png);
+
+}
+
+/* .telegram:hover{
+    background: linear-gradient(180deg, #2AABEE 0%, #229ED9 99.26%);
+} */
+
+.facebook:hover{
+    background: linear-gradient(180deg, #51ABF7 0%, #2862D8 100%);
+}
+.insta:hover{
+    background: linear-gradient(281.43deg, #DD3073 3.04%, rgba(222, 47, 109, 0) 33.14%), linear-gradient(164.38deg, #4B64D3 4.21%, #B9328E 23.29%, rgba(185, 50, 142, 0) 40.2%), linear-gradient(217.66deg, #8940BF 7.14%, #E5365F 49.09%, #EC6937 61.36%, #F9DB81 91.92%);
+}
+.youtube:hover{
+    background: #F31918;
+}
+.nav span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    min-width: 828px;
     height: 1px;
-    background: #00ac68;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
-/* navbar lighter ends */
+/* footer__bottom start  */
+ .footer__bottom{
+  background: rgba(1, 5, 4, 0.6);
+backdrop-filter: blur(8px);
+} 
+
+

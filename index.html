@@ -1,162 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.svg"
+      type="image/x-icon"
+    />
     <title>Dree.uz</title>
-</head>
+  </head>
 
-<body class="overflow-x-hidden">
-    <section class="hero__section relative min-h-screen !bg-center !bg-cover !bg-no-repeat w-full">
-        <header class="header">
-            <div class="container">
-                <div class="justify-between flex py-6">
-                    <div class="bars flex items-center">
-                        <div
-                            class="logo__dree text-[40px] font-extrabold leading-[51px] text-white mr-[37px] font-['medium']">
-                            <a href="#" target="_parent">DREE</a>
-                        </div>
-                        <div class="bar">
-                            <nav class="bar__body">
-                                <ul class="bar__list flex gap-5 text-base text-white font-['medium'] pointer">
-                                    <li>Asosiy</li>
-                                    <li>Daraxt ekish</li>
-                                    <li>Loyiha haqida</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-[26px]">
-                        <div
-                            class="header__lang flex items-center font-['medium'] gap-1 text-base font-medium text-white">
-                            <img src="./assets/images/header/header-flag.svg" alt="flag" />
-                            O'zbekcha
-                            <div>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17 9.5L12 14.5L7 9.5" stroke="white" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="header__search w-8 h-8 rounded-lg bg-white/10 items-center flex justify-center">
-                            <img src="./assets/images/header/header_search.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
+  <body class="overflow-x-hidden">
+    <!-- <section
+      class="hero__section relative min-h-screen !bg-center !bg-cover !bg-no-repeat w-full"
+    >
+      <header class="header">
+        <div class="container">
+          <div class="justify-between flex py-6">
+            <div class="bars flex items-center">
+              <div
+                class="logo__dree text-[40px] font-extrabold leading-[51px] text-white mr-[37px] font-['medium']"
+              >
+                <a href="#" target="_parent">DREE</a>
+              </div>
+              <div class="bar">
+                <nav class="bar__body">
+                  <ul
+                    class="bar__list flex gap-5 text-base text-white font-['medium'] pointer"
+                  >
+                    <li>Asosiy</li>
+                    <li>Daraxt ekish</li>
+                    <li>Loyiha haqida</li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-            <hr class="w-full hr" />
-        </header>
-        <main class="container">
-            <div class="absolute top-1/2 -translate-y-1/2">
+            <div class="flex items-center gap-[26px]">
+              <div
+                class="header__lang flex items-center font-['medium'] gap-1 text-base font-medium text-white"
+              >
+                <img src="./assets/images/header/header-flag.svg" alt="flag" />
+                O'zbekcha
                 <div>
-                    <div class="title max-w-[586px]">
-                        Kelajak uchun daraxtlar ekilishiga o‘z hissangizni qo‘shing!
-                    </div>
-                    <div class="mainhero_title text-2xl font-normal text-white">
-                        1ta daraxt 10 000 so‘mdan
-                    </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 9.5L12 14.5L7 9.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
-                <div>
-                    <a href="Daraht.html#">
-                        <button
-                            class="mainhero__button hover:opacity-90 duration-300 cursor-pointer text-[#031410] bg-whites py-3 pl-[46px] pr-[46px] font-['medium'] bg-white rounded-lg mt-[18px]">
-                            Daraxt ekish
-                        </button>
-                    </a>
-                </div>
+              </div>
+              <div
+                class="header__search w-8 h-8 rounded-lg bg-white/10 items-center flex justify-center"
+              >
+                <img src="./assets/images/header/header_search.svg" alt="" />
+              </div>
             </div>
-        </main>
+          </div>
+        </div>
+        <hr class="w-full hr" />
+      </header>
+      <main class="container">
+        <div class="absolute top-1/2 -translate-y-1/2">
+          <div>
+            <div class="title max-w-[586px]">
+              Kelajak uchun daraxtlar ekilishiga o‘z hissangizni qo‘shing!
+            </div>
+            <div class="mainhero_title text-2xl font-normal text-white">
+              1ta daraxt 10 000 so‘mdan
+            </div>
+          </div>
+          <div>
+            <a href="Daraht.html#">
+              <button
+                class="mainhero__button hover:opacity-90 duration-300 cursor-pointer text-[#031410] bg-whites py-3 pl-[46px] pr-[46px] font-['medium'] bg-white rounded-lg mt-[18px]"
+              >
+                Daraxt ekish
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
     </section>
 
     <section class="loyiha__haqida bg-[#031410] pt-[96px] pb-[39px]">
-        <div class="container">
-            <div class="loyiha__text">
-                <div class="loyiha__title title font-['medium']">Loyiha haqida</div>
-                <div class="loyiha__subtitle max-w-[688px] text-[#C0C4C3] font-['medium'] pt-4">
-                    Ushbu loyiha O‘zbekistonning barcha hududlarida daraxt ekish uchun
-                    mablag‘ to‘plash va ekish uchun yaratilgan. Loyiha orqali siz
-                    chet-davlatdan turib ham O‘zbekistonning hohlagan hududi uchun
-                    daraxtlar ekishingiz mumkin bo‘ladi. Bu orqali siz kelajak uchun
-                    toza havoni ta’minlashga o‘z hissangizni qo‘shasiz!
-                </div>
-                <div>
-                    <button
-                        class="loyiha__button py-3 px-8 flex items-center font-bold text-base text-white bg-white/10 mt-[17px] rounded-lg gap-2  hover:opacity-80 duration-300">
-                        Batafsil
-                        <i><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.91073 15.5892C7.23617 15.9147 7.76381 15.9147 8.08925 15.5892L13.0892 10.5892C13.4147 10.2638 13.4147 9.73616 13.0892 9.41072L8.08925 4.41072C7.76381 4.08529 7.23617 4.08529 6.91073 4.41072C6.5853 4.73616 6.5853 5.2638 6.91073 5.58923L11.3215 9.99998L6.91073 14.4107C6.5853 14.7362 6.5853 15.2638 6.91073 15.5892Z"
-                                    fill="white" />
-                            </svg>
-                        </i>
-                    </button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="loyiha__text">
+          <div class="loyiha__title title font-['medium']">Loyiha haqida</div>
+          <div
+            class="loyiha__subtitle max-w-[688px] text-[#C0C4C3] font-['medium'] pt-4"
+          >
+            Ushbu loyiha O‘zbekistonning barcha hududlarida daraxt ekish uchun
+            mablag‘ to‘plash va ekish uchun yaratilgan. Loyiha orqali siz
+            chet-davlatdan turib ham O‘zbekistonning hohlagan hududi uchun
+            daraxtlar ekishingiz mumkin bo‘ladi. Bu orqali siz kelajak uchun
+            toza havoni ta’minlashga o‘z hissangizni qo‘shasiz!
+          </div>
+          <div>
+            <button
+              class="loyiha__button py-3 px-8 flex items-center font-bold text-base text-white bg-white/10 mt-[17px] rounded-lg gap-2 hover:opacity-80 duration-300"
+            >
+              Batafsil
+              <i
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.91073 15.5892C7.23617 15.9147 7.76381 15.9147 8.08925 15.5892L13.0892 10.5892C13.4147 10.2638 13.4147 9.73616 13.0892 9.41072L8.08925 4.41072C7.76381 4.08529 7.23617 4.08529 6.91073 4.41072C6.5853 4.73616 6.5853 5.2638 6.91073 5.58923L11.3215 9.99998L6.91073 14.4107C6.5853 14.7362 6.5853 15.2638 6.91073 15.5892Z"
+                    fill="white"
+                  />
+                </svg>
+              </i>
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="xarita bg-[#46271A]">
-        <div class="container">
-
-        </div>
-    </section>
-<<<<<<< HEAD
-    <!-- <section class="bg-dark h-screen">
       <div class="container"></div>
     </section> -->
+    <section class="bg-dark h-screen relative pb-[800px]">
+      <div class="container pt-[90px]">
+        <p class="title mb-6">Eng ko'p daraxt ekkanlar</p>
+        <div class="flex items-center justify-between mb-4">
+          <p class="text-2xl text-white font-['medium']">Yuridik shaxslar:</p>
+          <div class="flex gap-4">
+            <!-- <div class="swiper-pagination flex items-center gap-1">
+              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
+              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
+              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
+              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
+            </div> -->
+            <div class="flex gap-2">
+              <div class="prev">
+                <img
+                  src="./assets/images/chevron-left.svg"
+                  alt="chevron left"
+                />
+              </div>
+              <div class="next">
+                <img
+                  src="./assets/images/chevron-right.svg"
+                  alt="chevron right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div
+            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+          >
+            <img src="./assets/images/uic-logo.svg" alt="uic group logo" />
+          </div>
+          <div
+            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+          >
+            <img src="./assets/images/imkon-logo.svg" alt="imkon logo" />
+          </div>
+          <div
+            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+          >
+            <img src="./assets/images/gerb.svg" alt="gerb" />
+          </div>
+          <div
+            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+          >
+            <img src="./assets/images/asaka-logo.svg" alt="asaka bank logo" />
+          </div>
+        </div>
+
+        <!-- <div
+          class="mt-6 mb-[15px] text-2xl font-medium text-white font-['medium']"
+        >
+          Jismoniy shaxslar:
+        </div> -->
+      </div>
+
+      <!-- <div id="sliders"></div>
+      <div class="relative">
+        <div class="carusel" id="sl1">
+          <div class="slide-track relative"></div>
+        </div>
+        <div class="absolute bottom-0">
+          <img src="./assets/images/shaxslar.png" alt="" />
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <button
+          class="mt-4 py-4 pl-[63px] pr-[57px] bg-[#188859] bg text-2xl font-bold text-white font-['medium'] rounded-lg hover:bg-[#16734C] duration-300"
+        >
+          Ushbu ro‘yxatga qo‘shilmoqchiman
+        </button>
+      </div> -->
+    </section>
+
+    <!-- <section class="bg-dark pb-16">
+      <div class="container">
+        <div class="flex justify-between pb-5">
+          <h4 class="text-white font-bold text-4xl font-[medium]">
+            Statistika
+          </h4>
+          <h5
+            class="flex gap-2 text-[#C0C4C3] font-medium text-2xl items-center font-['medium'] hover:text-white cursor-pointer"
+          >
+            Hududlar bo‘yicha natijalar<svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.29289 18.7071C8.68342 19.0976 9.31658 19.0976 9.70711 18.7071L15.7071 12.7071C16.0976 12.3166 16.0976 11.6834 15.7071 11.2929L9.70711 5.29289C9.31658 4.90237 8.68342 4.90237 8.29289 5.29289C7.90237 5.68342 7.90237 6.31658 8.29289 6.70711L13.5858 12L8.29289 17.2929C7.90237 17.6834 7.90237 18.3166 8.29289 18.7071Z"
+                fill="#C0C4C3"
+              />
+            </svg>
+          </h5>
+        </div>
+        <div class="statiska flex justify-between">
+          <div
+            class="relative w-[283px] h-[186px] bg-[#1C2B27] border border-solid border-[#A5ABAA] rounded-2xl"
+          >
+            <h5
+              class="font-['bold'] text-4xl leading-[45px] text-white text-center mt-[50px] mps-3"
+            >
+              40 mln
+            </h5>
+            <h6 class="font-['medium'] text-white text-2xl text-center">
+              Xayriya qilganlar soni
+            </h6>
+            <div>
+              <img
+                class="absolute top-0 right-0"
+                src="./assets/images/statiska/img1.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="relative w-[283px] h-[186px] bg-[#1C2B27] border border-solid border-[#A5ABAA] rounded-2xl"
+          >
+            <h5
+              class="font-['bold'] text-4xl leading-[45px] text-white text-center mt-[50px] mps-3"
+            >
+              40 mln
+            </h5>
+            <h6 class="font-['medium'] text-white text-2xl text-center">
+              Xayriya qilganlar soni
+            </h6>
+            <div>
+              <img
+                class="absolute top-0 right-0"
+                src="./assets/images/statiska/img2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="relative w-[283px] h-[186px] bg-[#1C2B27] border border-solid border-[#A5ABAA] rounded-2xl"
+          >
+            <h5
+              class="font-['bold'] text-4xl leading-[45px] text-white text-center mt-[50px] mps-3"
+            >
+              654 618
+            </h5>
+            <h6 class="font-['medium'] text-white text-2xl text-center">
+              Xayriya qilganlar soni
+            </h6>
+            <div>
+              <img
+                class="absolute top-0 right-0"
+                src="./assets/images/statiska/img3.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="relative w-[283px] h-[186px] bg-[#1C2B27] border border-solid border-[#A5ABAA] rounded-2xl"
+          >
+            <h5
+              class="font-['bold'] text-4xl leading-[45px] text-white text-center mt-[50px] mps-3"
+            >
+              328
+            </h5>
+            <h6 class="font-['medium'] text-white text-2xl text-center">
+              Xayriya qilganlar soni
+            </h6>
+            <div>
+              <img
+                class="absolute top-0 right-0"
+                src="./assets/images/statiska/img4.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="d__ekish relative bg-cover bg-center bg-no-repeat pb-[79px] border-b border-solid border-[rgba(3,20,16,0.4)]"
+    >
+      <div class="container">
+        <div>
+          <h3 class="title max-w-[825px] pt-[83px]">
+            Har bir ekilgan daraxt kelajak uchun toza havoni ta’minlashga yordam
+            beradi! Hududingizni obodonlashtirishga befarq bo‘lmang!
+          </h3>
+          <p class="font-['medium'] text-2xl text-white mt-2 mb-[37px]">
+            1ta daraxt 10 000 so‘mdan
+          </p>
+          <div>
+            <button
+              class="group py-4 px-[54px] flex gap-2 text-[#031410] bg-white rounded-lg font-['bold'] text-2xl items-center hover:bg-[#3E715D] duration-300 hover:text-white"
+            >
+              Daraxt ekish
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="group-hover:text-white"
+                  d="M12.1569 8.81198C11.9312 8.90053 11.7097 8.6838 11.7845 8.45321C12.2982 6.87029 14.158 6.2798 15.8869 7.68416C16.7963 8.42296 17.1381 8.57994 17.1467 8.5839C16.5472 9.18333 15.8622 11.1948 14.3674 11.4173C12.7208 11.7158 11.2635 10.0958 12.4558 9.3545C13.2399 8.86702 14.1632 8.58385 15.1528 8.58385C14.1153 8.34998 13.0796 8.45026 12.1569 8.81198Z"
+                  fill="#031410"
+                />
+                <path
+                  class="group-hover:text-white"
+                  d="M4.70071 7.6842C7.68514 5.26001 9.58844 9.08299 8.40537 8.70403C7.56511 8.43488 6.64652 8.37626 5.72509 8.58394C7.28627 8.58394 8.72537 9.29939 9.68487 10.4639C9.60606 8.63384 9.48688 7.48829 9.34869 6.63615C8.55121 6.60874 7.48833 5.96476 6.90464 4.8379C5.89835 3.03702 6.365 1.19053 6.51518 0.0253906C7.30148 0.791068 10.7362 -0.106104 12.0979 2.22717C12.6993 3.25787 12.5245 4.51211 11.8918 5.42994C11.6915 5.72051 11.2126 5.58109 11.1989 5.22847C11.1395 3.69455 10.3761 2.53562 8.95287 1.89373C9.59149 2.72119 10.0108 3.64759 10.2274 4.6051C10.5642 6.09668 10.9159 7.07512 11.045 11.8292C11.0581 12.3113 10.6675 12.7104 10.1853 12.7044C9.83612 12.7 9.53704 12.4784 9.40277 12.1561C9.19856 11.6659 8.86618 11.1586 8.32532 10.6937C7.81134 11.2619 7.02922 11.5641 6.21996 11.4174C4.73155 11.1959 4.03692 9.18 3.44075 8.58389C3.44948 8.58003 3.79128 8.42305 4.70071 7.6842Z"
+                  fill="#031410"
+                />
+                <path
+                  class="group-hover:text-white"
+                  d="M0.313532 13.6076C1.24652 12.9746 2.26196 13.4257 2.7283 13.6949L8.58045 17.9782L12.007 17.9789L12.8637 17.1223H9.71678C8.77035 17.1223 7.71042 16.5058 7.71042 15.4086C7.71042 14.2437 8.77035 13.6949 9.71678 13.6949H10.8961C11.7721 13.6949 12.7958 13.7731 13.5176 13.3867C14.2034 13.0377 14.9932 12.8391 15.8361 12.8391C17.2517 12.8391 18.5186 13.4034 19.3868 14.2934L24 18.8348L18.8601 23.9746L17.1469 21.4047H9.05074C8.1873 21.4047 7.35384 21.088 6.70836 20.5146L0.254959 14.7818C-0.103813 14.4631 -0.0835743 13.8771 0.313532 13.6076Z"
+                  fill="#031410"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="absolute -top-[34px] right-0">
+          <img src="./assets/images/darahtekish/leftbarg.svg" alt="leaf" />
+        </div>
+        <div class="absolute -bottom-[20px] left-0">
+          <img src="./assets/images/darahtekish/rightbarg.svg" alt="leaf" />
+        </div>
+        <div class="absolute left-[68%] top-[46%]">
+          <img src="./assets/images/darahtekish/centerleaf.svg" alt="leaf" />
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark pb-[53px]">
+      <div class="container">
+        <div class="pt-[45px] flex gap-16">
+          <div>
+            <div
+              class="logo__dree text-[40px] font-extrabold leading-[51px] text-white mb-[36px] font-['medium']"
+            >
+              <a href="#" target="_parent">DREE</a>
+            </div>
+            <div>
+              <div class="flex gap-4">
+                <div
+                  class="telegram transition-all duration-500 py-[34px] px-[20px] bg-[#3F4A47] bg-[none] rounded-md cursor-pointer hover:bg-[linear-gradient(180deg,#2AABEE_0%,#229ED9_99.26%)]"
+                >
+                  <img
+                    class="min-w-[22px] min-h-[22px]"
+                    src="./assets/images/footer/footer_tg.svg"
+                    alt="tg"
+                  />
+                </div>
+                <div
+                  class="facebook duration-300 py-[36px] px-[22px] bg-[#3F4A47] rounded-md"
+                >
+                  <img
+                    class="min-w-[22px] min-h-[22px]"
+                    src="./assets/images/footer/facebook_footer.svg"
+                    alt="facebook"
+                  />
+                </div>
+                <div
+                  class="insta duration-300 py-[34px] px-[20px] bg-[#3F4A47] rounded-md"
+                >
+                  <img
+                    class="min-w-[22px] min-h-[22px]"
+                    src="./assets/images/footer/footer_insta.svg"
+                    alt="instagram"
+                  />
+                </div>
+                <div
+                  class="youtube duration-300 py-[35px] px-[21px] bg-[#3F4A47] rounded-md"
+                >
+                  <img
+                    class="min-w-[22px] min-h-[22px]"
+                    src="./assets/images/footer/footer_youtube.svg"
+                    alt="instagram"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <nav class="nav relative">
+              <ul
+                class="flex text-white font-['medium'] text-lg leading-[22px] uppercase gap-8"
+              >
+                <li class="hover:opacity-75 duration-300">
+                  <a href="#">Loyiha haqida</a>
+                </li>
+                <li class="hover:opacity-75 duration-300">
+                  <a href="#">bog‘lanish</a>
+                </li>
+                <li class="hover:opacity-75 duration-300">
+                  <a href="#">maxfiylik siyosati</a>
+                </li>
+              </ul>
+              <span></span>
+            </nav>
+            <div class="footer__info mt-[61px] gap-5">
+              <div
+                class="text-sm font-['medium'] text-white hover:opacity-75 duration-300 cursor-pointer"
+              >
+                <a class="flex items-center gap-2" href="tel:+998 71 200 70 07">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.75">
+                      <path
+                        d="M13 3.2524C15.1627 2.63619 17.5428 3.14662 19.1981 4.80192C20.8534 6.45723 21.3638 8.8373 20.7476 11M14.9369 5.96407C15.7093 5.81021 16.5991 6.0767 17.2612 6.73883C17.9233 7.40095 18.1898 8.29065 18.0359 9.0631"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.1653 20.8835C16.0469 21.0388 16.9531 21.0388 17.8347 20.8835C19.2516 20.6338 20.3929 19.6826 20.786 18.4236L20.8694 18.1565C20.956 17.879 21 17.5919 21 17.3034C21 16.0313 19.8623 15 18.4589 15H14.5411C13.1377 15 12 16.0313 12 17.3034C12 17.5919 12.044 17.879 12.1306 18.1565L12.214 18.4236C12.6071 19.6826 13.7484 20.6338 15.1653 20.8835ZM15.1653 20.8835C9.04195 19.7489 4.25108 14.958 3.1165 8.83468M3.1165 8.83468C2.96117 7.95315 2.96117 7.04686 3.1165 6.16532C3.36618 4.74842 4.31744 3.60713 5.57641 3.21402L5.84345 3.13063C6.12103 3.04396 6.40813 3 6.69661 3C7.96874 3 9.00001 4.13768 9 5.54106L9 9.45894C9.00001 10.8623 7.96874 12 6.69661 12C6.40813 12 6.12103 11.956 5.84345 11.8694L5.57641 11.786C4.31744 11.3929 3.36618 10.2516 3.1165 8.83468Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                    </g>
+                  </svg>
+                  +998 71 200 70 07
+                </a>
+              </div>
+
+              <div
+                class="flex gap-2 items-center text-sm font-['medium'] text-white my-5 hover:opacity-75 duration-300 cursor-pointer"
+              >
+                <a class="flex gap-2 items-center" href="mailto:info@dree.uz">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.75">
+                      <path
+                        d="M4.30225 6.5004L10.0825 10.63C11.2295 11.4496 12.7705 11.4496 13.9175 10.63L19.6977 6.5004M2.88539 15.1513C2.37154 13.0819 2.37154 10.9181 2.88539 8.84875C3.55805 6.13984 5.70602 4.04534 8.43056 3.44162L8.88443 3.34105C10.9366 2.88632 13.0634 2.88632 15.1156 3.34105L15.5694 3.44162C18.294 4.04534 20.442 6.13984 21.1146 8.84876C21.6285 10.9182 21.6285 13.0819 21.1146 15.1512C20.442 17.8602 18.294 19.9547 15.5694 20.5584L15.1156 20.659C13.0634 21.1137 10.9366 21.1137 8.88443 20.659L8.43055 20.5584C5.70601 19.9547 3.55805 17.8602 2.88539 15.1513Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                  info@dree.uz
+                </a>
+              </div>
+
+              <div
+                class="flex gap-2 items-center text-sm font-['medium'] text-white hover:opacity-75 duration-300 cursor-pointer"
+              >
+                <a
+                  class="flex gap-2 items-center"
+                  href="https://yandex.uz/maps/10335/tashkent/house/YkAYdQZlSUIBQFprfX9wcntqZg==/?ll=69.315077%2C41.313792&utm_source=main_stripe_big&z=16.59"
+                  target="_blank"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.75">
+                      <path
+                        d="M20 11.1755C20 15.6907 15 21 12 21C9 21 4 15.6907 4 11.1755C4 6.66029 7.58172 3 12 3C16.4183 3 20 6.66029 20 11.1755Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M9.5 10.5C9.5 9.11929 10.6193 8 12 8C13.3807 8 14.5 9.11929 14.5 10.5C14.5 11.8807 13.3807 13 12 13C10.6193 13 9.5 11.8807 9.5 10.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                    </g>
+                  </svg>
+                  Toshkent shahri, Mirobod tumani, Amir Temur shoh ko‘chasi,
+                  22-uy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="foooter__bottom bg-[#0C0F0F] py-[23px]">
+      <div class="container">
+        <div class="flex justify-between text-white text-base font-['medium']">
+          Tree.uz © 2021. Barcha huquqlar himoyalangan
+          <div class="text-[#C1C1C1] text-sm font-['medium']">
+            <a
+              class="flex items-center gap-2"
+              href="https://uic.group/uz"
+              target="_blank"
+            >
+              Developed by:
+              <img src="./assets/images/footer/uiclogo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script type="module" src="./swiper.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
-`
-=======
-    <section class="bg-dark h-screen">
-        <div class="container">
-            <p class="title mb-6">Eng ko'p daraxt ekkanlar</p>
-            <div class="flex items-center justify-between mb-4">
-                <p class="text-2xl text-white font-['medium']">Yuridik shaxslar:</p>
-                <div class="flex gap-4">
-                    <div class="flex items-center gap-1">
-                        <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-                        <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-                        <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-                        <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-                    </div>
-                    <div class="flex gap-2">
-                        <div>
-                            <img src="./assets/images/chevron-left.svg" alt="chevron left">
-                        </div>
-                        <div>
-                            <img src="./assets/images/chevron-right.svg" alt="chevron right">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-5">
-                <div
-                    class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl">
-                    <img src="./assets/images/uic-logo.svg" alt="uic group logo">
-                </div>
-                <div
-                    class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl">
-                    <img src="./assets/images/imkon-logo.svg" alt="imkon logo">
-                </div>
-                <div
-                    class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl">
-                    <img src="./assets/images/gerb.svg" alt="gerb">
-                </div>
-                <div
-                    class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl">
-                    <img src="./assets/images/asaka-logo.svg" alt="asaka bank logo">
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
-
-</html>
->>>>>>> 130603d859ddd2298646e5b375cf85812bdf39fb
