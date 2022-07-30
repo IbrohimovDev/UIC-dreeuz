@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link
       rel="shortcut icon"
       href="./assets/images/favicon.svg"
@@ -14,10 +16,10 @@
   </head>
 
   <body class="overflow-x-hidden">
-    <!-- <section
-      class="hero__section relative min-h-screen !bg-center !bg-cover !bg-no-repeat w-full"
+      <section
+      class="hero__section relative min-h-screen !bg-center !bg-cover !bg-no-repeat w-full z-10"
     >
-      <header class="header">
+      <header class="border-b border-solid border-white/20">
         <div class="container">
           <div class="justify-between flex py-6">
             <div class="bars flex items-center">
@@ -31,9 +33,21 @@
                   <ul
                     class="bar__list flex gap-5 text-base text-white font-['medium'] pointer"
                   >
-                    <li>Asosiy</li>
-                    <li>Daraxt ekish</li>
-                    <li>Loyiha haqida</li>
+                    <li
+                      class="active border-b border-solid border-[transparent] hover:border-[#00AC68]"
+                    >
+                      Asosiy
+                    </li>
+                    <li
+                      class="border-b border-solid border-[transparent] hover:border-[#00AC68]"
+                    > <a href="daraht.html" target="_parent"> Daraxt ekish</a>
+                     
+                    </li>
+                    <li
+                      class="border-b border-solid border-[transparent] hover:border-[#00AC68]"
+                    >
+                      Loyiha haqida
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -70,147 +84,213 @@
             </div>
           </div>
         </div>
-        <hr class="w-full hr" />
       </header>
-      <main class="container">
+      <main class="container relative min-h-screen">
+        <div
+          class="bg-dark-footer absolute bottom-0 left-0 w-full h-[3vw] z-20"
+        ></div>
         <div class="absolute top-1/2 -translate-y-1/2">
-          <div>
-            <div class="title max-w-[586px]">
-              Kelajak uchun daraxtlar ekilishiga o‘z hissangizni qo‘shing!
-            </div>
-            <div class="mainhero_title text-2xl font-normal text-white">
-              1ta daraxt 10 000 so‘mdan
-            </div>
-          </div>
-          <div>
-            <a href="Daraht.html#">
-              <button
-                class="mainhero__button hover:opacity-90 duration-300 cursor-pointer text-[#031410] bg-whites py-3 pl-[46px] pr-[46px] font-['medium'] bg-white rounded-lg mt-[18px]"
-              >
-                Daraxt ekish
-              </button>
-            </a>
-          </div>
+          <h1 class="title max-w-[586px] mb-[6px]">
+            Kelajak uchun daraxtlar ekilishiga o‘z hissangizni qo‘shing!
+          </h1>
+          <p class="text-2xl text-white mb-[18px] font-sans font-normal">
+            1ta daraxt 10 000 so‘mdan
+          </p>
+          <button
+            class="py-3 px-[46px] rounded-lg bg-white hover:bg-[#0E4D34] hover:text-white hover:outline-1 hover:outline hover:outline-[#3E715D] text-base text-[#031410] font-['bold'] duration-300 cursor-pointer"
+          >
+            Daraxt ekish
+          </button>
         </div>
       </main>
     </section>
 
-    <section class="loyiha__haqida bg-[#031410] pt-[96px] pb-[39px]">
-      <div class="container">
-        <div class="loyiha__text">
-          <div class="loyiha__title title font-['medium']">Loyiha haqida</div>
-          <div
-            class="loyiha__subtitle max-w-[688px] text-[#C0C4C3] font-['medium'] pt-4"
+    <section class="bg-[#031410]">
+      <div class="container relative">
+        <div class="relative max-w-[788px] w-9/12 pt-24 pb-[39px] z-20">
+          <p class="title mb-4">Loyiha haqida</p>
+          <p
+            class="text-white lg:text-[#C0C4C3] text-2xl font-sans font-normal mb-[17px]"
           >
             Ushbu loyiha O‘zbekistonning barcha hududlarida daraxt ekish uchun
             mablag‘ to‘plash va ekish uchun yaratilgan. Loyiha orqali siz
             chet-davlatdan turib ham O‘zbekistonning hohlagan hududi uchun
             daraxtlar ekishingiz mumkin bo‘ladi. Bu orqali siz kelajak uchun
             toza havoni ta’minlashga o‘z hissangizni qo‘shasiz!
-          </div>
+          </p>
           <div>
-            <button
-              class="loyiha__button py-3 px-8 flex items-center font-bold text-base text-white bg-white/10 mt-[17px] rounded-lg gap-2 hover:opacity-80 duration-300"
+            <a href="daraht.html" target="_parent">
+              <button
+              class="py-3 px-8 flex items-center font-['bold'] text-base leading-5 text-white bg-white/10 hover:bg-white/20 rounded-lg gap-2 hover:outline hover:outline-1 hover:border-white/75 duration-300"
             >
               Batafsil
-              <i
-                ><svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.91073 15.5892C7.23617 15.9147 7.76381 15.9147 8.08925 15.5892L13.0892 10.5892C13.4147 10.2638 13.4147 9.73616 13.0892 9.41072L8.08925 4.41072C7.76381 4.08529 7.23617 4.08529 6.91073 4.41072C6.5853 4.73616 6.5853 5.2638 6.91073 5.58923L11.3215 9.99998L6.91073 14.4107C6.5853 14.7362 6.5853 15.2638 6.91073 15.5892Z"
-                    fill="white"
-                  />
-                </svg>
-              </i>
+              <img
+                src="./assets/images/chevron-right.svg"
+                alt="chevron right"
+              />
             </button>
+            </a>
+           
           </div>
+        </div>
+        <div
+          class="absolute bottom-0 translate-x-[50%] lg:translate-x-0 right-1/2 lg:right-0 z-10 opacity-60 lg:opacity-100\"
+        >
+          <img src="./assets/images/Loyiha/nihol.png" alt="nihol" />
         </div>
       </div>
     </section>
 
-    <section class="xarita bg-[#46271A]">
-      <div class="container"></div>
-    </section> -->
-    <section class="bg-dark h-screen relative pb-[800px]">
-      <div class="container pt-[90px]">
+    <section class="bg-[#46271A] pt-[46px] pb-[29px]">
+      <div class="container flex items-center">
+        <div class="w-full md:w-1/2">
+          <p class="title w-[426px]">O'z hududingizga daraxt ekmoqchimisiz?</p>
+          <div>
+            <img src="./assets/images/map.png" alt="xarita" />
+          </div>
+        </div>
+        <div class="w-1/2">
+          <p class="text-2xl text-white font-['bold'] mb-[18px]">
+            Qaysi hududga daraxt ekmoqchisiz?
+          </p>
+          <div class="flex justify-between">
+            <div>
+              <div>
+                <p
+                  class="text-base text-white/75 font-normal font-sans mb-[6px]"
+                >
+                  Viloyat
+                </p>
+                <div
+                  class="relative text-white font-sans font-normal border border-solid border-white/10 rounded-lg select cursor-pointer select-none z-20"
+                  style="width: 239px"
+                >
+                  <p
+                    class="py-3 px-4 font-sans font-normal leading-[125%] select-title"
+                  >
+                    Viloyatingizni tanlang
+                  </p>
+                  <ul
+                    class="absolute top-[107%] max-h-[180px] overflow-y-scroll overflow-x-hidden p-3 bg-[#1C2B27] border border-solid border-[#5B6663] rounded-lg z-[99] cursor-pointer select-menu"
+                  >
+                    <li class="select-menu-items">Toshkent Viloyati</li>
+                    <li class="select-menu-items">Namangan Viloyati</li>
+                    <li class="select-menu-items">Andijon Viloyati</li>
+                    <li class="select-menu-items">Farg'ona Viloyati</li>
+                    <li class="select-menu-items">
+                      Qoraqalpog'iston Respublikasi
+                    </li>
+                  </ul>
+                  <img
+                    class="absolute right-3 top-1/2 -translate-y-1/2 rotate-90 duration-300 z-10 selectChevron"
+                    src="./assets/images/chevron-right.svg"
+                    alt="chevron-right"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-dark">
+      <div class="container">
         <p class="title mb-6">Eng ko'p daraxt ekkanlar</p>
         <div class="flex items-center justify-between mb-4">
           <p class="text-2xl text-white font-['medium']">Yuridik shaxslar:</p>
-          <div class="flex gap-4">
-            <!-- <div class="swiper-pagination flex items-center gap-1">
-              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-              <span class="w-2 h-2 bg-[#5E6966] rounded-full"></span>
-            </div> -->
+          <div class="flex !items-center gap-5">
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal " ></div>
             <div class="flex gap-2">
               <div class="prev">
                 <img
-                  src="./assets/images/chevron-left.svg"
+                  src="./assets/images/chevron-rounded-left.svg"
                   alt="chevron left"
                 />
               </div>
               <div class="next">
                 <img
-                  src="./assets/images/chevron-right.svg"
+                  src="./assets/images/chevron-rounded-right.svg"
                   alt="chevron right"
                 />
               </div>
             </div>
           </div>
         </div>
-
         <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-wrapper flex">
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img src="./assets/images/uic-logo.svg" alt="uic group logo" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img src="./assets/images/imkon-logo.svg" alt="imkon logo" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img src="./assets/images/gerb.svg" alt="gerb" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img
+                  src="./assets/images/asaka-logo.svg"
+                  alt="asaka bank logo"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img src="./assets/images/uic-logo.svg" alt="uic group logo" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img src="./assets/images/imkon-logo.svg" alt="imkon logo" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img src="./assets/images/gerb.svg" alt="gerb" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
+              >
+                <img
+                  src="./assets/images/asaka-logo.svg"
+                  alt="asaka bank logo"
+                />
+              </div>
+            </div>
           </div>
+            
         </div>
 
-        <div class="flex gap-5">
-          <div
-            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
-          >
-            <img src="./assets/images/uic-logo.svg" alt="uic group logo" />
-          </div>
-          <div
-            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
-          >
-            <img src="./assets/images/imkon-logo.svg" alt="imkon logo" />
-          </div>
-          <div
-            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
-          >
-            <img src="./assets/images/gerb.svg" alt="gerb" />
-          </div>
-          <div
-            class="flex items-center justify-center w-[283px] h-[164px] bg-[#1C2B27] hover:bg-[#121F1B] border border-solid border-[#A5ABAA] hover:border-[#188859] cursor-pointer duration-300 rounded-2xl"
-          >
-            <img src="./assets/images/asaka-logo.svg" alt="asaka bank logo" />
-          </div>
-        </div>
-
-        <!-- <div
+        <div
           class="mt-6 mb-[15px] text-2xl font-medium text-white font-['medium']"
         >
           Jismoniy shaxslar:
-        </div> -->
+        </div>
       </div>
-
-      <!-- <div id="sliders"></div>
+      <div id="sliders"></div>
       <div class="relative">
         <div class="carusel" id="sl1">
           <div class="slide-track relative"></div>
@@ -220,15 +300,17 @@
         </div>
       </div>
       <div class="flex items-center justify-center">
-        <button
-          class="mt-4 py-4 pl-[63px] pr-[57px] bg-[#188859] bg text-2xl font-bold text-white font-['medium'] rounded-lg hover:bg-[#16734C] duration-300"
-        >
-          Ushbu ro‘yxatga qo‘shilmoqchiman
-        </button>
-      </div> -->
+     <a href="daraht.html">
+      <button
+      class="mt-4 py-4 pl-[63px] pr-[57px] bg-[#188859] bg text-2xl font-bold text-white font-['medium'] rounded-lg hover:bg-[#16734C] duration-300"
+    >
+      Ushbu ro‘yxatga qo‘shilmoqchiman
+    </button>
+     </a>
+      </div>
     </section>
 
-    <!-- <section class="bg-dark pb-16">
+     <section class="bg-dark pb-16">
       <div class="container">
         <div class="flex justify-between pb-5">
           <h4 class="text-white font-bold text-4xl font-[medium]">
@@ -335,9 +417,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
-    <section
+     <section
       class="d__ekish relative bg-cover bg-center bg-no-repeat pb-[79px] border-b border-solid border-[rgba(3,20,16,0.4)]"
     >
       <div class="container">
@@ -350,7 +432,8 @@
             1ta daraxt 10 000 so‘mdan
           </p>
           <div>
-            <button
+            <a href="daraht.html" target="_parent">
+              <button
               class="group py-4 px-[54px] flex gap-2 text-[#031410] bg-white rounded-lg font-['bold'] text-2xl items-center hover:bg-[#3E715D] duration-300 hover:text-white"
             >
               Daraxt ekish
@@ -378,6 +461,8 @@
                 />
               </svg>
             </button>
+            </a>
+           
           </div>
         </div>
         <div class="absolute -top-[34px] right-0">
@@ -390,20 +475,21 @@
           <img src="./assets/images/darahtekish/centerleaf.svg" alt="leaf" />
         </div>
       </div>
-    </section>
-    <footer class="bg-dark pb-[53px]">
+    </section> 
+     <footer class="bg-dark pb-[53px]">
       <div class="container">
         <div class="pt-[45px] flex gap-16">
           <div>
             <div
-              class="logo__dree text-[40px] font-extrabold leading-[51px] text-white mb-[36px] font-['medium']"
+              class="text-[40px] font-extrabold leading-[51px] text-white mb-[36px] font-['medium']"
             >
-              <a href="#" target="_parent">DREE</a>
+             
+              <a href="#" target="_blank">DREE</a>
             </div>
             <div>
               <div class="flex gap-4">
                 <div
-                  class="telegram transition-all duration-500 py-[34px] px-[20px] bg-[#3F4A47] bg-[none] rounded-md cursor-pointer hover:bg-[linear-gradient(180deg,#2AABEE_0%,#229ED9_99.26%)]"
+                  class="telegram bg-[#3F4A47] py-[34px] px-[20px] rounded-md cursor-pointer transition-all duration-300 "
                 >
                   <img
                     class="min-w-[22px] min-h-[22px]"
@@ -430,7 +516,7 @@
                   />
                 </div>
                 <div
-                  class="youtube duration-300 py-[35px] px-[21px] bg-[#3F4A47] rounded-md"
+                  class="youtube transition-all duration-300 py-[35px] px-[21px] bg-[#3F4A47] rounded-md"
                 >
                   <img
                     class="min-w-[22px] min-h-[22px]"
@@ -480,6 +566,7 @@
                         stroke-linejoin="round"
                       />
                       <path
+                        m
                         d="M15.1653 20.8835C16.0469 21.0388 16.9531 21.0388 17.8347 20.8835C19.2516 20.6338 20.3929 19.6826 20.786 18.4236L20.8694 18.1565C20.956 17.879 21 17.5919 21 17.3034C21 16.0313 19.8623 15 18.4589 15H14.5411C13.1377 15 12 16.0313 12 17.3034C12 17.5919 12.044 17.879 12.1306 18.1565L12.214 18.4236C12.6071 19.6826 13.7484 20.6338 15.1653 20.8835ZM15.1653 20.8835C9.04195 19.7489 4.25108 14.958 3.1165 8.83468M3.1165 8.83468C2.96117 7.95315 2.96117 7.04686 3.1165 6.16532C3.36618 4.74842 4.31744 3.60713 5.57641 3.21402L5.84345 3.13063C6.12103 3.04396 6.40813 3 6.69661 3C7.96874 3 9.00001 4.13768 9 5.54106L9 9.45894C9.00001 10.8623 7.96874 12 6.69661 12C6.40813 12 6.12103 11.956 5.84345 11.8694L5.57641 11.786C4.31744 11.3929 3.36618 10.2516 3.1165 8.83468Z"
                         stroke="white"
                         stroke-width="1.5"
@@ -568,8 +655,8 @@
           </div>
         </div>
       </div>
-    </div> -->
-    <script type="module" src="./swiper.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

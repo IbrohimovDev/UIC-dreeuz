@@ -1,72 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --dark: #020b09;
-}
-
-@font-face {
-  font-family: "black";
-  src: url("../font/cera-pro-sv/Cera\ Pro\ Black.otf");
-}
-
-@font-face {
-  font-family: "blackItalic";
-  src: url("../font/cera-pro-sv/Cera\ Pro\ Black\ Italic.otf.otf");
-}
-
-@font-face {
-  font-family: "bold";
-  src: url("../font/cera-pro-sv/Cera Pro Bold.otf");
-}
-
-@font-face {
-  font-family: "medium";
-  src: url("../font/cera-pro-sv/Cera Pro Medium.otf");
-}
-
-@font-face {
-  font-family: "regularItalic";
-  src: url("../font/cera-pro-sv/Cera Pro Regular Italic.otf");
-}
-
-@font-face {
-  font-family: "light";
-  src: url("../font/cera-pro-sv/Cera Pro Light.otf.otf");
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Cera\ Pro\ Medium.otf";
-}
-
-.container {
-  width: 90%;
-  max-width: 1192px;
-  margin: 0 auto;
-}
-
-.text-dark {
-  color: var(--dark);
-}
-
-.bg-dark {
-  background-color: var(--dark);
-}
-
-.title {
-  font-family: "bold";
-  font-size: 36px;
-  line-height: 45px;
-  color: #fff;
-}
-
+@import url(./import.css);
 .hero__section {
   background: url(../images/hero-header/bg..png);
 }
@@ -85,35 +17,28 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
-
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  width: 283px !important;
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.swiper-pagination {
+  position: relative !important;
+  align-items: center
 }
-
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top:50% !important;
+  transform: translateY(-50%) !important;
+  bottom: auto !important;
+width: auto !important;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top:50% !important;
+  transform: translateY(-50%) !important;
+  bottom: auto !important;
+  width: auto !important;
+}
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
@@ -169,15 +94,18 @@ body {
 
 }
 
-/* .telegram:hover{
-    background: linear-gradient(180deg, #2AABEE 0%, #229ED9 99.26%);
-} */
-
+/* s */
+.telegram:hover {
+  background: rgba(42, 171, 238, 1);
+}
 .facebook:hover{
-    background: linear-gradient(180deg, #51ABF7 0%, #2862D8 100%);
+    background: rgba(81, 171, 247, 1);
 }
 .insta:hover{
-    background: linear-gradient(281.43deg, #DD3073 3.04%, rgba(222, 47, 109, 0) 33.14%), linear-gradient(164.38deg, #4B64D3 4.21%, #B9328E 23.29%, rgba(185, 50, 142, 0) 40.2%), linear-gradient(217.66deg, #8940BF 7.14%, #E5365F 49.09%, #EC6937 61.36%, #F9DB81 91.92%);
+    background: rgba(137, 64, 191, 1) ;
+    background: rgba(229, 54, 95, 1);
+    background: rgba(236, 105, 55, 1) ;
+    background:  rgba(249, 219, 129, 1);;
 }
 .youtube:hover{
     background: #F31918;

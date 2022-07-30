@@ -1,3 +1,17 @@
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+  });
+
 const root = document.getElementById('sliders')
 
 for (let i = 0; i < 3; i++) {
