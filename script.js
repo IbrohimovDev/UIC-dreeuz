@@ -1,25 +1,23 @@
 let select = document.querySelectorAll('.select')
-let selectedTitle = document.querySelectorAll('.select-title')
+let selectedTitle = document.querySelector('.select-title')
 let selectMenu = document.querySelectorAll('.select-menu')
 let selectMenuItems = document.querySelectorAll('.select-items')
 let chevron = document.querySelectorAll('.selectChevron')
 
 select.forEach(item => {
-    item.onclick = (e) => {
-        console.log('Click',e.target)
+    item.onclick = () => {
         if (item.classList.contains('active')) {
             item.classList.remove('active')
-            console.log('active removed')
         }else {
             item.classList.add('active')
-            console.log('active added')
         }
     }
 })
 
 selectMenuItems.forEach( item => { item 
-    item.onclick = () => {
-        selectedTitle.innerText = item.innerText
+    item.onclick = (e) => {
+        let list = e.target
+        list.parentElement.parentElement.querySelector('p').innerText = item.innerText
     }
 })
 

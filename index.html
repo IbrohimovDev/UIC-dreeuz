@@ -27,8 +27,9 @@
                   <li class="navitem-active border-b border-solid border-[transparent] hover:border-[#00AC68]">
                     Asosiy
                   </li>
-                  <li class="border-b border-solid border-[transparent] hover:border-[#00AC68]">Daraxt
-                    ekish</li>
+                  <li class="border-b border-solid border-[transparent] hover:border-[#00AC68]"><a class="relative z-10"
+                      href="./daraht.html" target="_blank">Daraxt
+                      ekish</a></li>
                   <li class="border-b border-solid border-[transparent] hover:border-[#00AC68]">Loyiha
                     haqida</li>
                 </ul>
@@ -100,7 +101,7 @@
     <div class="container flex items-center">
       <div class="w-full md:w-1/2">
         <p class="title w-[426px]">O'z hududingizga daraxt ekmoqchimisiz?</p>
-        <div>
+        <div class="mt-6 mr-[59px] mb-[76px]">
           <img src="./assets/images/map.png" alt="xarita">
         </div>
       </div>
@@ -144,12 +145,33 @@
                     src="./assets/images/chevron-right.svg" alt="chevron-right">
                 </div>
               </div>
+              <div class="w-full flex justify-between mt-5 gap-5">
+                <div>
+                  <input type="checkbox" id="mahalla">
+                  <label for="mahalla">Mahallamga daraxt ekish</label>
+                </div>
+                <div
+                  class="relative w-[239px] text-white font-sans font-normal border border-solid border-white/10 rounded-lg  select cursor-pointer select-none z-20">
+                  <p class="relative z-20 py-3 px-4 font-sans font-normal leading-[125%] select-title">
+                    Viloyatingizni
+                    tanlang</p>
+                  <ul
+                    class="absolute top-[107%] max-h-[180px] overflow-y-scroll overflow-x-hidden p-3 bg-[#1C2B27] border border-solid border-[#5B6663] rounded-lg z-[99] cursor-pointer duration-300 select-menu">
+                    <li class="select-items">Toshkent Viloyati</li>
+                    <li class="select-items">Namangan Viloyati</li>
+                    <li class="select-items">Andijon Viloyati</li>
+                    <li class="select-items">Farg'ona Viloyati</li>
+                    <li class="select-items">Qoraqalpog'iston Respublikasi</li>
+                  </ul>
+                  <img class="absolute right-3 top-1/2 -translate-y-1/2 rotate-90 duration-300 z-10 selectChevron"
+                    src="./assets/images/chevron-right.svg" alt="chevron-right">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
+</div>
   </section>
 
   <section class="bg-dark py-16">
@@ -257,7 +279,7 @@
         <h5
           class="flex gap-2 text-[#C0C4C3] font-medium text-2xl items-center font-['medium'] hover:text-white cursor-pointer">
           Hududlar bo‘yicha natijalar <img src="./assets/images/chevron-right.svg" alt="chevron right">
-          
+
         </h5>
       </div>
       <div class="statiska flex justify-between">
