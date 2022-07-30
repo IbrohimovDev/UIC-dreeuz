@@ -236,3 +236,19 @@ backdrop-filter: blur(8px);
 } 
 
 
+
+.insta div {
+  transition: all .3s;
+  background: linear-gradient(216.23deg, #8940BF -6.19%, #E5365F 52.62%, #EC6937 76.01%, #F9DB81 116.72%);
+}
+.telegram div {
+transition: all .3s;
+background: linear-gradient(180deg, #2AABEE 0%, #229ED9 99.26%);
+}
+.facebook div {
+transition: all .3s;
+background: linear-gradient(180deg, #51ABF7 0%, #2862D8 100%);
+}
+.youtube:hover {
+background: #f31918;
+}
