@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/style/daraht.css" />
+    <title>Daraht ekish</title>
+  </head>
+  <body>
+    <header class="border-b bg-dark border-solid border-white/20">
+      <div class="container">
+        <div class="justify-between flex py-6">
+          <div class="bars flex items-center">
+            <div
+              class="logo__dree text-[40px] font-extrabold leading-[51px] text-white mr-[37px] font-['medium']"
+            >
+              <a href="#" target="_parent">DREE</a>
+            </div>
+            <div class="bar">
+              <nav class="bar__body">
+                <ul
+                  class="bar__list flex gap-5 text-base text-white font-['medium'] pointer"
+                >
+                  <li
+                    class="active border-b border-solid border-[transparent] hover:border-[#00AC68]"
+                  >
+                    Asosiy
+                  </li>
+                  <li
+                    class="border-b border-solid border-[transparent] hover:border-[#00AC68]"
+                  >
+                    <a href="daraht.html" target="_parent"> Daraxt ekish</a>
+                  </li>
+                  <li
+                    class="border-b border-solid border-[transparent] hover:border-[#00AC68]"
+                  >
+                    Loyiha haqida
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="flex items-center gap-[26px]">
+            <div
+              class="header__lang flex items-center font-['medium'] gap-1 text-base font-medium text-white"
+            >
+              <img src="./assets/images/header/header-flag.svg" alt="flag" />
+              O'zbekcha
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 9.5L12 14.5L7 9.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="header__search w-8 h-8 rounded-lg bg-white/10 items-center flex justify-center"
+            >
+              <img src="./assets/images/header/header_search.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-dark">
+      <div class="container">
+        <div
+          class="font-['bold'] text-4xl leading-['45px'] text-white flex gap-2 pt-[36px] pb-[45px]"
+        >
+          Daraxt ekish
+          <img src="./assets/images/darahtekish/greenleaf.svg" alt="leaf" />
+        </div>
+        <div class="form__all flex items-center flex-col">
+          <div class="forms">
+            <div
+              class="form__body p-6 min-w-[788px] bg-[#1C2B27] rounded-xl mb-16 flex flex-col duration-300"
+            >
+              <form class="form relative">
+                <div class="form__lineT gap-4 flex mb-4">
+                  <div class="form__column w-full flex flex-col">
+                    <label
+                      class="text-white font-['medium'] text-base opacity-75 mb-2"
+                      >Viloyat</label
+                    >
+                    <div class="select">
+                      <input
+                        class="bg-[rgba(255,255,255,0.2)] border border-solid border-white/20 w-full block"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__column w-full flex flex-col">
+                    <label
+                      class="text-white font-['medium'] text-base opacity-75 mb-2"
+                      >Shahar/tuman</label
+                    >
+                    <div class="select">
+                      <input
+                        class="bg-[rgba(255,255,255,0.2)] border border-solid border-white/20 w-full block"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox gap-2 items-center flex mb-5">
+                  <input
+                    class="w-6 h-6 text-black bg-black"
+                    type="checkbox"
+                    id="mahalla"
+                    name="mahalla"
+                  />
+                  <label
+                    class="text-white font-['medium'] text-base opacity-75"
+                    for="vehicle1"
+                    >Mahallamga daraxt ekish</label
+                  >
+                </div>
+                <div class="form__lineT gap-4 flex mb-4">
+                  <div class="form__column w-full flex flex-col">
+                    <label
+                      class="text-white font-['medium'] text-base opacity-75 mb-2"
+                      >Viloyat</label
+                    >
+                    <div class="select">
+                      <input
+                        class="bg-[rgba(255,255,255,0.2)] border border-solid border-white/20 w-full block"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__column w-full flex flex-col">
+                    <label
+                      class="text-white font-['medium'] text-base opacity-75 mb-2"
+                      >Shahar/tuman</label
+                    >
+                    <div class="select">
+                      <input
+                        class="bg-[rgba(255,255,255,0.2)] border border-solid border-white/20 w-full block"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-5 min-w-[740px] h-[1px] bg-white/20 rounded-lg" />
+                <div class="form__line">
+                  <div class="form__column w-full flex flex-col">
+                    <label
+                      class="text-white font-['medium'] text-base opacity-75 mb-2 gap-1 flex"
+                      >Ijtimoiy tarmoqdagi sahifangiz uchun havolani kiriting:
+                      <img
+                        class="mt-[3px]"
+                        src="./assets/images/darahtekish/Info.svg"
+                        alt="info"
+                      />
+                    </label>
+
+                  
+
+                    <div class="w-full flex flex-col">
+                      <div class="select">
+                        <input
+                          class="relative bg-[rgba(255,255,255,0.2)] border border-solid border-white/20 w-full block h-[44px]"
+                          type="text"
+                                                />
+                      </div>
+
+                      <div
+                        class="absolute right-0 w-[164px] h-[42px] bg-white/20 rounded-[7px] flex gap-4 items-center justify-center"
+                      >
+                        <div>
+                            <a href="#">
+                                <img
+                                src="./assets/images/darahtekish/tg.svg"
+                                alt="telegram"
+                              />
+                            </a>
+                         
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img
+                                src="./assets/images/darahtekish/insta.svg"
+                                alt="instagram"
+                              /></a>
+                          
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img
+                                src="./assets/images/darahtekish/facebook.svg"
+                                alt="facebook"
+                              />
+                              </a>
+                        </div>
+                        <div>
+                            <a href="#"> <img
+                                src="./assets/images/darahtekish/twitter.svg"
+                                alt="twitter"
+                              /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
