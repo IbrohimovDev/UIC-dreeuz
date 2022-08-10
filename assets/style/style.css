@@ -48,13 +48,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: #5B6663;
-    width: 4px;
+  background-color: #5B6663;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 10px;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .container {
@@ -83,30 +83,32 @@ body {
 }
 
 .bg-dark-footer {
-    background: url('../images/hero-header/bg-dark-footer.png')
+  background: url('../images/hero-header/bg-dark-footer.png')
 }
 
 
-.bar__body ul li, 
+.bar__body ul li,
 .navitem-active {
-    cursor: pointer;
-    position: relative;
-    transition: all .3s;
+  cursor: pointer;
+  position: relative;
+  transition: all .3s;
 }
+
 .navitem-active {
-    border-bottom: 1px solid #00AC68;
-    z-index: -1;
+  border-bottom: 1px solid #00AC68;
+  z-index: -1;
 }
 
 .bar__body ul li:hover::before,
 .navitem-active::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(59, 206, 83, 0) 0%, rgba(21, 190, 109, 0) 0.01%, #15BE6D 100%);
-    opacity: 0.2;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(59, 206, 83, 0) 0%, rgba(21, 190, 109, 0) 0.01%, #15BE6D 100%);
+  opacity: 0.2;
 }
+
 /* swiper pagination start */
 
 .swiper {
@@ -115,35 +117,42 @@ body {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
 .swiper-slide {
   width: 283px !important;
 }
+
 .swiper-pagination {
   position: relative !important;
   align-items: center
 }
+
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top:50% !important;
-  transform: translateY(-50%) !important;
-  bottom: auto !important;
-width: auto !important;
-}
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  top:50% !important;
+  top: 50% !important;
   transform: translateY(-50%) !important;
   bottom: auto !important;
   width: auto !important;
 }
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  bottom: auto !important;
+  width: auto !important;
+}
+
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
   width: 100%;
 }
+
 .select.active {
   z-index: 60 !important;
 }
-.select.active .selectChevron{
-  transform: translateY(-50%) rotate(270deg) ;
+
+.select.active .selectChevron {
+  transform: translateY(-50%) rotate(270deg);
 }
 
 .select-menu {
@@ -167,18 +176,20 @@ width: auto !important;
 }
 
 .select-items {
-    padding: 12px 0;
-    border-bottom: 1px solid #5B6663;
-    /* border-top-right-radius: 8px;
+  padding: 12px 0;
+  border-bottom: 1px solid #5B6663;
+  /* border-top-right-radius: 8px;
     border-top-left-radius: 8px; */
 }
+
 .select-items:nth-child(1) {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .select-items:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
+
 /* swiiper pagination  ends  */
 
 
@@ -202,6 +213,7 @@ width: auto !important;
   0% {
     transform: translateX(0px);
   }
+
   70% {
     transform: translateX(calc(-50px * 1));
   }
@@ -211,6 +223,7 @@ width: auto !important;
   width: 100px;
   height: 100px;
 }
+
 /* slider ends  */
 
 .d__ekish {
@@ -222,28 +235,31 @@ width: auto !important;
 .telegram:hover {
   background: rgba(42, 171, 238, 1);
 }
-.facebook:hover{
-    background: rgba(81, 171, 247, 1);
+
+.facebook:hover {
+  background: rgba(81, 171, 247, 1);
 }
-.youtube:hover{
-    background: #F31918;
+
+.youtube:hover {
+  background: #F31918;
 }
-.nav span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 40px;
-    min-width: 828px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+
+.nav span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40px;
+  min-width: 828px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 }
 
 /* footer__bottom start  */
- .footer__bottom{
+.footer__bottom {
   background: rgba(1, 5, 4, 0.6);
-backdrop-filter: blur(8px);
-} 
+  backdrop-filter: blur(8px);
+}
 
 
 
@@ -251,14 +267,104 @@ backdrop-filter: blur(8px);
   transition: all .3s;
   background: linear-gradient(216.23deg, #8940BF -6.19%, #E5365F 52.62%, #EC6937 76.01%, #F9DB81 116.72%);
 }
+
 .telegram div {
-transition: all .3s;
-background: linear-gradient(180deg, #2AABEE 0%, #229ED9 99.26%);
+  transition: all .3s;
+  background: linear-gradient(180deg, #2AABEE 0%, #229ED9 99.26%);
 }
+
 .facebook div {
-transition: all .3s;
-background: linear-gradient(180deg, #51ABF7 0%, #2862D8 100%);
+  transition: all .3s;
+  background: linear-gradient(180deg, #51ABF7 0%, #2862D8 100%);
 }
+
 .youtube:hover {
-background: #f31918;
+  background: #f31918;
+}
+
+.checkbox {
+  --background: #fff;
+  --border: #D1D6EE;
+  --border-hover: #BBC1E1;
+  --border-active: #fff;
+  --tick: #031410;
+  position: relative;
+}
+.checkbox input,
+.checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: box-shadow 0.3s;
+  box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+.checkbox input:hover {
+  --s: 2px;
+  --b: var(--border-hover);
+}
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  transform: scale(var(--scale, 1)) translateZ(0);
+}
+.checkbox.bounce {
+  --stroke: var(--tick);
+}
+.checkbox.bounce input:checked {
+  --s: 11px;
+}
+.checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce 0.4s linear forwards 0.2s;
+          animation: bounce 0.4s linear forwards 0.2s;
+}
+.checkbox.bounce svg {
+  --scale: 0;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
